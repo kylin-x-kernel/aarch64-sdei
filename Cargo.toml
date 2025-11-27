@@ -1,0 +1,16 @@
+[package]
+name = "aarch64-sdei"
+version = "0.1.0"
+edition = "2024"
+authors = ["RstinyOS Contributors"]
+license = "Apache-2.0"
+description = "ARM Software Delegated Exception Interface (SDEI) driver for AArch64"
+keywords = ["aarch64", "sdei", "nmi", "arm", "no_std"]
+categories = ["no-std", "embedded", "hardware-support"]
+
+[features]
+default = []
+log = ["dep:log"]
+
+[dependencies]
+log = { version = "0.4", optional = true }
